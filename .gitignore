@@ -1,0 +1,5 @@
+mmdetection/
+__pycache__/
+*/__pycache__/
+data_dcase2023_task3/*
+!data_dcase2023_task3/list_dataset/

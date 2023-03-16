@@ -23,7 +23,7 @@ The concatenated feature sequence are fed into the decoder to output a Multi-ACC
 
 The final audio-visual SELD baseline architecture is as shown below.
 <p align="center">
-   <img src="./image/audio-visual_baseline.png" width="400" title="Audio-Visual SELD Baseline Architecture">
+   <img src="./image/audio-visual_baseline.png" width="700" title="Audio-Visual SELD Baseline Architecture">
 </p>
 
 ## Datasets

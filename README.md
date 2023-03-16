@@ -21,6 +21,11 @@ The Gaussian-like vectors are encoded to a visual embedding by FCs.
 Then the audio embeddings from the audio encoder and the visual embedding are concatenated.
 The concatenated feature sequence are fed into the decoder to output a Multi-ACCDOA sequence.
 
+The final audio-visual SELD baseline architecture is as shown below.
+<p align="center">
+   <img src="./image/audio-visual_baseline.png" width="400" title="Audio-Visual SELD Baseline Architecture">
+</p>
+
 ## Datasets
 * [**Sony-TAu Realistic Spatial Soundscapes 2023 (STARSS23)**](https://zenodo.org/record/7709052)
 

@@ -108,9 +108,14 @@ This will dump the logs and models in the `./data_dcase2023_task3/model_monitor/
 
 You may modify the path for python on the script.
 CPU memory needs 15GB and GPU memory 2GB.
-The training takes around a few hours.
+The training takes around half a dozen hours.
 ```
-bash script/train_seld.sh
+bash script/train_seld_foa.sh
+```
+
+Microphone array version is the same way.
+```
+bash script/train_seld_mic.sh
 ```
 
 You can check the training details using TensorBoard.
@@ -132,14 +137,13 @@ Following the previous challenge, this year we use the macro mode of computation
 We first compute the above four metrics for each of the sound class, and then average them to get the final system performance.
 
 The evaluation metric scores for the test split of the development dataset are given below.
-Some lines are under construction.
 
 | Input | ER<sub>20°</sub> | F<sub>20°</sub> | LE<sub>CD</sub> | LR<sub>CD</sub> |
 | ----| --- | --- | --- | --- |
-| Ambisonic + Video | 0.89 | 12.4 % | 38.5&deg; | 26.1 % |
-| Ambisonic | - | - | - | - |
-| Microphone Array + Video | - | - | - | - |
-| Microphone Array | - | - | - | - |
+| Ambisonic + Video                 | 1.07 | 14.3 % | 48.4&deg; | 35.5 % |
+| Ambisonic (for comparison)        | 1.00 | 14.4 % | 60.4&deg; | 32.7 % |
+| Microphone Array + Video          | 1.08 |  9.8 % | 62.4&deg; | 29.2 % |
+| Microphone Array (for comparison) | 1.03 | 11.4 % | 77.3&deg; | 30.4 % |
 
 **Note:** The reported baseline system performance is not exactly reproducible due to varying setups. However, you should be able to obtain similar results.
 

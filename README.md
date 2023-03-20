@@ -137,6 +137,11 @@ Following the previous challenge, this year we use the macro mode of computation
 We first compute the above four metrics for each of the sound class, and then average them to get the final system performance.
 
 The evaluation metric scores for the test split of the development dataset are given below.
+The current audio-visual baseline system shows limited performance compared to [the audio-only baseline system](https://github.com/sharathadavanne/seld-dcase2023).
+It's mainly because the training data of the audio-visual baseline is only STARSS23 development set itself while the audio-only system uses [a combination of the STARSS23 development set recordings and synthetic audio recordings](https://github.com/sharathadavanne/seld-dcase2023#datasets).
+Other reasons are minor differences in implementation such as feature, network architecture, and hyperparameter.
+
+For more straightforward comparison between the audio-visual and audio-only methods, we also give audio-only results based on the same training data, i.e., STARSS23 development set, and the same implementation. The only difference is the presence or absence of video input.
 
 | Input | ER<sub>20°</sub> | F<sub>20°</sub> | LE<sub>CD</sub> | LR<sub>CD</sub> |
 | ----| --- | --- | --- | --- |

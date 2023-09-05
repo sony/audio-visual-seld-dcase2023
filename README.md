@@ -72,9 +72,9 @@ The provided system has been tested on python 3.8.16 and pytorch 1.7.1.
 
 You can install the requirements by running the following lines.
 ```
-conda create --name audio_visual_seld_dcase2023 python=3.8
+conda create --name audio_visual_seld_dcase2023 python=3.8 -y
 conda activate audio_visual_seld_dcase2023
-conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=11.0 -c pytorch
+conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=11.0 -c pytorch -y
 ```
 
 You need to set up mmdetection for object detection model. (Ref: https://github.com/open-mmlab/mmdetection/blob/master/docs/en/get_started.md/)
@@ -84,19 +84,21 @@ mim install mmcv-full
 git clone https://github.com/open-mmlab/mmdetection.git
 cd mmdetection
 pip install -v -e .
+mim install mmdet==2.28.1
 mim download mmdet --config yolox_tiny_8x8_300e_coco --dest .
 cd ..
 ```
 
 After installation of mmdetection, you can continue to install with the below lines.
 ```
-conda install tensorboard
-conda install tqdm
-conda install -c conda-forge pysoundfile
-conda install -c conda-forge librosa
-conda install ipython
-conda install chardet
+conda install tensorboard -y
+conda install tqdm -y
+conda install -c conda-forge pysoundfile -y
+conda install -c conda-forge librosa -y
+conda install ipython -y
+conda install chardet -y
 pip install moviepy==1.0.3
+conda install pandas==1.5.3 -y
 ```
 
 ### Training trial

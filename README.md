@@ -68,7 +68,7 @@ audio-visual-seld-dcase2023         This repository.
 ```
 
 ### Prerequisites
-The provided system has been tested on python 3.8.16 and pytorch 1.7.1.
+The provided system has been tested on linux, python 3.8.16, and pytorch 1.7.1.
 
 You can install the requirements by running the following lines.
 ```
